@@ -3,7 +3,6 @@ public abstract class Component {
 
     String make;
     String model;
-    String status;
 
     public Component(String make, String model){
         this.make = make;
@@ -22,5 +21,13 @@ public abstract class Component {
 
     public String getModel() {
         return this.model;
+    }
+
+    public String turnUp() {
+        return "louder";
+    }
+
+    public String turnDown() {
+        return "softer";
     }
 }

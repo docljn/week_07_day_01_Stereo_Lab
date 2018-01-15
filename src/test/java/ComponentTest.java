@@ -25,4 +25,15 @@ public class ComponentTest {
     public void canGetModel(){
         assertEquals("xxx", radio.getModel());
     }
+
+    @Test
+    public void canTurnUp(){
+        assertEquals("louder", radio.turnUp());
+    }
+
+    @Test
+    public void canTurnDown(){
+        assertEquals("softer", radio.turnDown());
+
+    }
 }
