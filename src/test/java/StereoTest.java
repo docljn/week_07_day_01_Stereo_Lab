@@ -8,6 +8,7 @@ public class StereoTest {
     Radio radio;
     CDPlayer cd;
     Stereo stereo;
+    Phone phone;
 
 
     @Before
@@ -15,6 +16,7 @@ public class StereoTest {
         radio = new Radio("a", "b");
         cd = new CDPlayer("c", "d");
         stereo = new Stereo(radio, cd);
+        phone = new Phone();
     }
 
     @Test
@@ -36,6 +38,16 @@ public class StereoTest {
     @Test
     public void canDisconnectFromComponent(){
         assertEquals("Disconnected", stereo.disconnect(cd));
+    }
+
+    @Test
+    public void canConnectToExternal(){
+        assertEquals("Beep", stereo.connect(phone));
+    }
+
+    @Test
+    public void canDisconnectFromExternal(){
+        assertEquals("Beep", stereo.disconnect(phone));
     }
 
 
