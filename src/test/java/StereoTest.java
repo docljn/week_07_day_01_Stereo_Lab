@@ -28,5 +28,16 @@ public class StereoTest {
     }
 
 
+    @Test
+    public void canConnectToComponent(){
+        assertEquals("Connected", stereo.connect(cd));
+    }
+
+    @Test
+    public void canDisconnectFromComponent(){
+        assertEquals("Disconnected", stereo.disconnect(cd));
+    }
+
+
 
 }

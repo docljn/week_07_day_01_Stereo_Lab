@@ -1,4 +1,4 @@
-public class Radio extends Component {
+public class Radio extends Component implements IConnect {
     public Radio(String make, String model) {
         super(make, model);
     }
@@ -7,12 +7,19 @@ public class Radio extends Component {
         return "Heating up valves";
     }
 
-    @Override
     public String switchOff() {
         return "Fades out";
     }
 
     public String tune(String station) {
         return station;
+    }
+
+    public String connect() {
+        return "Crackle";
+    }
+
+    public String disconnect() {
+        return "Pop";
     }
 }

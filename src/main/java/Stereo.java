@@ -16,4 +16,13 @@ public class Stereo {
     public String switchOff(Component component) {
         return component.switchOff();
     }
+
+
+    public String connect(IConnect device) {
+        return device.connect();
+    }
+
+    public String disconnect(IConnect device) {
+        return device.disconnect();
+    }
 }

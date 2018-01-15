@@ -1,4 +1,4 @@
-public class CDPlayer extends Component {
+public class CDPlayer extends Component implements IConnect {
 
 
     public CDPlayer(String make, String model) {
@@ -16,5 +16,13 @@ public class CDPlayer extends Component {
 
     public String play(String album) {
         return "Playing " + album;
+    }
+
+    public String connect() {
+        return "Connected";
+    }
+
+    public String disconnect() {
+        return "Disconnected";
     }
 }
