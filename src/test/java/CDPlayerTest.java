@@ -3,26 +3,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class RadioTest {
+public class CDPlayerTest {
 
-    Radio radio;
-
+    CDPlayer cd;
 
     @Before
     public void before(){
-        radio = new Radio("A", "B");
+        cd = new CDPlayer("Aiwa", "ZX");
     }
-
+    
     @Test
     public void canSwitchOn(){
-        assertEquals("Heating up valves", radio.switchOn());
-    }
+        assertEquals("GreenLight", cd.switchOn());
+        }
 
     @Test
     public void canSwitchOff(){
-        assertEquals("Fades out", radio.switchOff());
+        assertEquals("RedLight", cd.switchOff());
     }
-
 
 
 }

@@ -15,15 +15,6 @@ public class ComponentTest {
 
 
 
-    @Test
-    public void canSwitchOn(){
-        assertEquals("Heating up valves", radio.switchOn());
-    }
-
-    @Test
-    public void canSwitchOff(){
-        assertEquals("Fades out", radio.switchOff());
-    }
 
     @Test
     public void canGetMake(){
