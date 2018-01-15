@@ -13,4 +13,8 @@ public class CDPlayer extends Component {
     public String switchOff() {
         return "RedLight";
     }
+
+    public String play(String album) {
+        return "Playing " + album;
+    }
 }

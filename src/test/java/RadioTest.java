@@ -23,6 +23,11 @@ public class RadioTest {
         assertEquals("Fades out", radio.switchOff());
     }
 
+    @Test
+    public void canTune(){
+        assertEquals("Radio3", radio.tune("Radio3"));
+    }
+
 
 
 }

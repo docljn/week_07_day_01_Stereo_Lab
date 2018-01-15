@@ -11,4 +11,8 @@ public class Radio extends Component {
     public String switchOff() {
         return "Fades out";
     }
+
+    public String tune(String station) {
+        return station;
+    }
 }

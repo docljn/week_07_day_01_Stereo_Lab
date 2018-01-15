@@ -11,7 +11,7 @@ public class CDPlayerTest {
     public void before(){
         cd = new CDPlayer("Aiwa", "ZX");
     }
-    
+
     @Test
     public void canSwitchOn(){
         assertEquals("GreenLight", cd.switchOn());
@@ -20,6 +20,11 @@ public class CDPlayerTest {
     @Test
     public void canSwitchOff(){
         assertEquals("RedLight", cd.switchOff());
+    }
+
+    @Test
+    public void canPlayCD(){
+        assertEquals("Playing Joshua Tree", cd.play("Joshua Tree"));
     }
 
 
